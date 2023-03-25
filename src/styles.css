@@ -112,3 +112,14 @@ form#location-form {
   width: 100%;
   justify-content: center;
 }
+h2 {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-weight: thin;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: small;
+}
