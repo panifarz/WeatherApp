@@ -50,6 +50,15 @@ body {
   border-radius: 20px;
   padding: 10px;
   text-align: center;
+  margin: 5px;
+}
+
+.otherInfo {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
 }
 
 .date {
