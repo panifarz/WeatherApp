@@ -19,99 +19,112 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="search">
-      <form id="search-form">
-        <input
-          class="cityInput"
-          id="cityName"
-          placeholder="  Search City..."
-          autocomplete="off"
-        />
-        <button class="searchButton" type="submit" value="search">
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png?1670383628"
-            height="30"
-            width="30"
-          />
-        </button>
-      </form>
-    </div>
+    <div class="weatherAppBorder">
+      <div class="weatherApp">
+        <div class="search">
+          <form id="search-form">
+            <input
+              class="cityInput"
+              id="cityName"
+              placeholder="  Search City..."
+              autocomplete="off"
+            />
+            <button class="searchButton" type="submit" value="search">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png?1670383628"
+                height="30"
+                width="30"
+              />
+            </button>
+          </form>
+        </div>
 
-    <div class="container">
-      <h5 class="date" id="date">date</h5>
-      <div class="row">
-        <div class="col mainWeather">
-          <h1 class="emoji">⛅️</h1>
-          <div class="temperature">
-            <span class="temp" id="temp"> 17 </span>
-            <span class="tempUnits">
-              <a href="#" id="celsius-link">°C </a> |
-              <a href="#" id="fahrenheit-link"> °F</a>
-            </span>
+        <div class="container">
+          <h5 class="date" id="date">date</h5>
+          <div class="row weather">
+            <div class="col mainWeather">
+              <h1 class="emoji">⛅️</h1>
+              <div class="temperature">
+                <span class="temp" id="temp"> 17 </span>
+                <span class="tempUnits">
+                  <a href="#" id="celsius-link">°C </a> |
+                  <a href="#" id="fahrenheit-link"> °F</a>
+                </span>
+              </div>
+              <p id="city">Winnipeg</p>
+            </div>
+            <div class="col otherInfo">
+              <ul class="info">
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 2km/h</li>
+              </ul>
+            </div>
           </div>
-          <p id="city">Winnipeg</p>
-        </div>
-        <div class="col otherInfo">
-          <ul>
-            <li>Precipitation: 0%</li>
-            <li>Humidity: 73%</li>
-            <li>Wind: 2km/h</li>
-          </ul>
-          >
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col weatherBox">
-          <p>
-            ⛅️
-            <br />
-            7°C
-          </p>
-          <p>Monday</p>
+          <div class="row">
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                7°C
+              </p>
+              <p>Mon</p>
+            </div>
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                9°C
+              </p>
+              <p>Tues</p>
+            </div>
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                6°C
+              </p>
+              <p>Wed</p>
+            </div>
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                10°C
+              </p>
+              <p>Thurs</p>
+            </div>
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                5°C
+              </p>
+              <p>Fri</p>
+            </div>
+            <div class="col weatherBox">
+              <p>
+                ⛅️
+                <br />
+                10°C
+              </p>
+              <p>Sat</p>
+            </div>
+          </div>
         </div>
-        <div class="col weatherBox">
-          <p>
-            ⛅️
-            <br />
-            9°C
-          </p>
-          <p>Tuesday</p>
-        </div>
-        <div class="col weatherBox">
-          <p>
-            ⛅️
-            <br />
-            6°C
-          </p>
-          <p>Wednesday</p>
-        </div>
-        <div class="col weatherBox">
-          <p>
-            ⛅️
-            <br />
-            10°C
-          </p>
-          <p>Thursday</p>
-        </div>
-        <div class="col weatherBox">
-          <p>
-            ⛅️
-            <br />
-            5°C
-          </p>
-          <p>Friday</p>
+        <div class="location">
+          <form id="location-form">
+            <button class="currentLocation" type="submit">
+              Current Location
+            </button>
+          </form>
         </div>
       </div>
-    </div>
-    <div class="location">
-      <form id="location-form">
-        <button class="currentLocation" type="submit">Current Location</button>
-      </form>
     </div>
     <h2>
-      <a href="https://github.com/panifarz/WeatherApp">Open-source code</a> by
-      Pani Farzadmanesh
+      <a href="https://github.com/panifarz/WeatherApp">Open-source code</a>
+      by Pani Farzadmanesh
     </h2>
     <script src="src/index.js"></script>
   </body>

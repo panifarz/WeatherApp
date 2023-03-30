@@ -1,3 +1,13 @@
+.weatherAppBorder {
+  max-width: 600px;
+  border: 1px solid #7e7e7e;
+  border-radius: 15px;
+  margin: 50px auto;
+}
+
+.weatherApp {
+  margin: 50px;
+}
 body {
   height: 100vh;
   background: #111;
@@ -36,29 +46,34 @@ body {
 
 .currentLocation {
   background-color: transparent;
+
   text-align: center;
   color: #8f8d8d;
   border: 1px solid #7e7e7e;
   border-radius: 25px;
   width: 190px;
   padding: 10px;
-  margin: 30px 250px;
+  margin: 30px 25px;
 }
 
-.mainWeather {
+.weather {
   background-color: #1f1f1f;
   border-radius: 20px;
   padding: 10px;
   text-align: center;
-  margin: 5px;
+  margin: 10px -7px;
 }
 
 .otherInfo {
   background-color: #1f1f1f;
   border-radius: 20px;
-  padding: 10px;
-  text-align: center;
   margin: 5px;
+}
+
+.info {
+  list-style-type: none;
+  margin: 40px 10px;
+  line-height: 60px;
 }
 
 .date {
@@ -81,8 +96,8 @@ h1 {
 
 .emoji {
   text-align: center;
-  line-height: 200px;
-  font-size: 140px;
+  line-height: 150px;
+  font-size: 80px;
   margin-bottom: 0;
 }
 
@@ -90,7 +105,7 @@ h1 {
   margin-bottom: 0;
   line-height: 50px;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .tempUnits {
@@ -100,12 +115,13 @@ h1 {
 
 .city {
   color: #fff;
+  font-size: 20px;
 }
 
 p {
   text-align: center;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .weatherBox {
@@ -129,6 +145,18 @@ h2 {
   font-weight: thin;
   letter-spacing: 3px;
   margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: small;
+}
+
+.openSource {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Varela Round", sans-serif;
+  font-weight: thin;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
   margin-top: 30px;
   font-size: small;
 }
