@@ -15,7 +15,7 @@ body {
 }
 
 #search-form {
-  width: 90%%;
+  width: 90%;
   color: white;
   border: 1px solid #7e7e7e;
   padding: 25px;
@@ -67,11 +67,11 @@ body {
 
 .mainWeather {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: wrap column;
   background-color: #1f1f1f;
   border-radius: 20px;
-  margin: 5px;
+  margin: 10px;
 }
 
 .otherInfo {
@@ -109,8 +109,8 @@ h1 {
 
 .emoji {
   text-align: center;
-  line-height: 150px;
-  font-size: 80px;
+  line-height: 110px;
+  font-size: 60px;
   margin-bottom: 0;
 }
 

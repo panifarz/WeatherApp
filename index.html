@@ -41,7 +41,11 @@
 
         <div class="container">
           <h5 class="date" id="date">date</h5>
+
           <div class="row weather">
+            <div class="row weatherDescription">
+              <p class="description">Description</p>
+            </div>
             <div class="col mainWeather">
               <h1 class="emoji">⛅️</h1>
               <div class="temperature">
@@ -55,9 +59,8 @@
             </div>
             <div class="col otherInfo">
               <ul class="info">
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
