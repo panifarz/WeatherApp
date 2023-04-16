@@ -21,41 +21,50 @@
   <body>
     <div class="weatherAppBorder">
       <div class="weatherApp">
-        <div class="search">
-          <form id="search-form">
-            <input
-              class="cityInput"
-              id="cityName"
-              placeholder="  Search City..."
-              autocomplete="off"
-            />
-            <button class="searchButton" type="submit" value="search">
-              <img
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png?1670383628"
-                height="30"
-                width="30"
+        <form id="search-form">
+          <div class="row search">
+            <div class="col-10 searchBar">
+              <input
+                class="form-control"
+                id="cityName"
+                type="search"
+                placeholder="  Search City..."
+                autocomplete="off"
               />
-            </button>
-          </form>
-        </div>
+            </div>
+            <div class="col searchBar">
+              <input
+                id="search-button"
+                class="search-button"
+                type="submit"
+                value=""
+              />
+            </div>
+          </div>
+        </form>
 
         <div class="container">
           <h5 class="date" id="date">date</h5>
-
           <div class="row weather">
             <div class="row weatherDescription">
-              <p class="description">Description</p>
+              <p id="description">Description</p>
             </div>
             <div class="col mainWeather">
-              <h1 class="emoji">⛅️</h1>
+              <img
+                src="https://openweathermap.org/img/wn/10d@2x.png"
+                alt=""
+                class="weatherIcon"
+                id="weatherIcon"
+              />
               <div class="temperature">
-                <span class="temp" id="temp"> 17 </span>
+                <span class="temp" id="temp"> Temp </span>
                 <span class="tempUnits">
-                  <a href="#" id="celsius-link">°C </a> |
+                  <a href="#" id="celsius-link" class="active">°C </a>
+                  |
                   <a href="#" id="fahrenheit-link"> °F</a>
                 </span>
               </div>
-              <p id="city">Winnipeg</p>
+              <p id="city">City</p>
             </div>
             <div class="col otherInfo">
               <ul class="info">

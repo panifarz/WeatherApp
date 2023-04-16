@@ -15,6 +15,37 @@ body {
 }
 
 #search-form {
+  border: 1px solid #7e7e7e;
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+#cityName {
+  background-color: #111;
+  border: #1f1f1f;
+  border-radius: 25px;
+  color: white;
+  width: 475px;
+}
+
+#search-button {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png?1670383628`);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 40px;
+  border: none;
+  background-color: #111;
+  display: block;
+  float: right;
+  margin: 2px;
+  border-radius: 25px;
+}
+
+/*
+#search-form {
   width: 90%;
   color: white;
   border: 1px solid #7e7e7e;
@@ -23,9 +54,8 @@ body {
   margin: 30px auto;
   text-align: center;
   display: block;
-}
-
-.cityInput {
+ 
+  .cityInput {
   color: white;
   border: none;
   background-color: transparent;
@@ -34,7 +64,10 @@ body {
   margin: -13px;
   outline: none;
 }
+}
+*/
 
+/*
 .searchButton {
   background-color: transparent;
   display: flex;
@@ -45,6 +78,7 @@ body {
   margin: -15px;
   padding: 1px;
 }
+*/
 
 .currentLocation {
   background-color: transparent;
@@ -107,10 +141,14 @@ h1 {
   text-align: center;
 }
 
-.emoji {
+#description {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.weatherIcon {
   text-align: center;
   line-height: 110px;
-  font-size: 60px;
   margin-bottom: 0;
 }
 
@@ -121,10 +159,22 @@ h1 {
   font-size: 30px;
 }
 
+a {
+  text-decoration: none;
+}
 .tempUnits {
   position: relative;
   top: -12px;
   font-size: 15px;
+}
+
+.tempUnits .active {
+  color: white;
+  cursor: default;
+}
+
+.tempUnits .active:hover {
+  text-decoration: none;
 }
 
 .city {
