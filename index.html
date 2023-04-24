@@ -45,84 +45,36 @@
 
         <div class="container">
           <h5 class="date" id="date">date</h5>
-          <div class="row weather">
-            <div class="row weatherDescription">
-              <p id="description">Description</p>
-            </div>
-            <div class="col mainWeather">
-              <img
-                src="https://openweathermap.org/img/wn/10d@2x.png"
-                alt=""
-                class="weatherIcon"
-                id="weatherIcon"
-              />
-              <div class="temperature">
-                <span class="temp" id="temp"> Temp </span>
-                <span class="tempUnits">
-                  <a href="#" id="celsius-link" class="active">°C </a>
-                  |
-                  <a href="#" id="fahrenheit-link"> °F</a>
-                </span>
+          <div class="weatherInfo">
+            <div class="row weather">
+              <div class="row weatherDescription">
+                <p id="description">Description</p>
               </div>
-              <p id="city">City</p>
+              <div class="col mainWeather">
+                <img
+                  src="https://openweathermap.org/img/wn/10d@2x.png"
+                  alt=""
+                  class="weatherIcon"
+                  id="weatherIcon"
+                />
+                <div class="temperature">
+                  <span class="temp" id="temp"> Temp </span>
+                  <span class="tempUnits">
+                    <a href="#" id="celsius-link" class="active">°C </a>
+                    |
+                    <a href="#" id="fahrenheit-link"> °F</a>
+                  </span>
+                </div>
+                <p id="city">City</p>
+              </div>
+              <div class="col otherInfo">
+                <ul class="info">
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>m/s</li>
+                </ul>
+              </div>
             </div>
-            <div class="col otherInfo">
-              <ul class="info">
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/h</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                7°C
-              </p>
-              <p>Mon</p>
-            </div>
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                9°C
-              </p>
-              <p>Tues</p>
-            </div>
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                6°C
-              </p>
-              <p>Wed</p>
-            </div>
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                10°C
-              </p>
-              <p>Thurs</p>
-            </div>
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                5°C
-              </p>
-              <p>Fri</p>
-            </div>
-            <div class="col weatherBox">
-              <p>
-                ⛅️
-                <br />
-                10°C
-              </p>
-              <p>Sat</p>
-            </div>
+            <div class="weather-forecast" id="weather-forecast"></div>
           </div>
         </div>
         <div class="location">
