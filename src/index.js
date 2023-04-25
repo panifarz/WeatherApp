@@ -1,23 +1,3 @@
-/* 
-function showPosition(position) {
-  let apiKey = "bc6d2694c7f4e9ac9094666861724dff";
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}appid=${apiKey}`;
-  axios.get(apiUrl).then(showWeather);
-}
-
-// ----------------------- Current Location Button Action ------------------------
-
-let currentLocationBtn = document.querySelector("#location-form");
-currentLocationBtn.addEventListener("click", onCurrentLocation);
-
-function onCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-*/
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let dayOfMonth = date.getDate();
@@ -180,3 +160,20 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+// ----------------------- Current Location Button  ------------------------
+
+function showPosition(position) {
+  let apiKey = "37c0c405c64e1f86767ea83f4db04b54";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let currentLocationBtn = document.querySelector("#location-form");
+currentLocationBtn.addEventListener("click", getCurrentLocation);
