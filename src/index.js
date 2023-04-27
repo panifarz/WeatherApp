@@ -1,3 +1,6 @@
+const API_KEY = "37c0c405c64e1f86767ea83f4db04b54";
+const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let dayOfMonth = date.getDate();
