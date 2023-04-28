@@ -32,7 +32,7 @@ body {
 }
 
 #search-button {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png?1670383628");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/836/original/icons8-search-100_%281%29.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 40px;
